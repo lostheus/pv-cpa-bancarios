@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>250 Mapas Mentais para CPA ANBIMA | @mapeiamapas</title>
+  <meta name="description" content="O material visual pronto que simplifica e acelera sua revisão para a CPA ANBIMA. 250 mapas práticos em 4 cadernos temáticos.">
+  <meta name="theme-color" content="#0B192C">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
+            display: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              50: '#F0F4F8',
+              100: '#D9E2EC',
+              200: '#BCCCDC',
+              300: '#9FB3C8',
+              400: '#627D98',
+              600: '#243B53',
+              700: '#1A365D',
+              800: '#102A43',
+              900: '#0B192C',
+              950: '#060E18',
+            },
+            gold: {
+              50: '#FDFBF5',
+              100: '#F7EFCF',
+              200: '#EFDEA0',
+              300: '#E4CB6E',
+              400: '#D4B340',
+              500: '#C59B27',
+              600: '#A67D15',
+              700: '#84600B',
+              800: '#634708',
+            },
+            green: {
+              50: '#EBF8EE',
+              100: '#CDEFD5',
+              200: '#9CE0AA',
+              500: '#2E8540',
+              600: '#236932',
+              700: '#1B5428',
+              800: '#14401F',
+            },
+            ink: {
+              50: '#F8FAFC',
+              100: '#F1F5F9',
+              200: '#E2E8F0',
+              300: '#CBD5E1',
+              400: '#94A3B8',
+              500: '#64748B',
+              600: '#475569',
+              700: '#334155',
+              800: '#1E293B',
+              900: '#0F172A',
+            }
+          },
+          boxShadow: {
+            soft: '0 1px 3px rgba(11,25,44,.05), 0 10px 25px -5px rgba(11,25,44,.08)',
+            card: '0 1px 3px rgba(11,25,44,.04), 0 16px 36px -12px rgba(11,25,44,.16)',
+            lift: '0 22px 65px -18px rgba(11,25,44,.38)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-size: 16px; }
+    html, body { background: #FAF9F6; color: #1E293B; overflow-x: hidden; max-width: 100%; }
+    body { font-family: 'Montserrat', system-ui, sans-serif; -webkit-font-smoothing: antialiased; background-image: radial-gradient(rgba(11,25,44,.025) 1px, transparent 1px); background-size: 4px 4px; }
+    h1, h2, h3 { font-family: 'Montserrat', sans-serif; letter-spacing: -0.025em; font-weight: 800; color: #0B192C; }
+    .font-display { font-family: 'Montserrat', sans-serif; }
+    body h1 { font-weight: 800; }
+    body h2 { font-weight: 800; font-size: 1.65rem; line-height: 1.2; color: #0B192C; }
+    @media(min-width: 640px) { body h2 { font-size: 2.05rem; } }
+    @media(min-width: 768px) { body h2 { font-size: 2.45rem; } }
+    body h3 { font-size: clamp(1.25rem, 2.2vw, 1.55rem); line-height: 1.2; font-weight: 700; }
+    .balance { text-wrap: balance; }
+    .accent { color: #1A365D; }
+    section { position: relative; }
+    .divtop { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(11,25,44,.1), transparent); }
+    .gold-rule { height: 3px; width: 60px; background: linear-gradient(90deg, #C59B27, transparent); border-radius: 3px; margin: 14px auto 0; }
+    .eyebrow { display: inline-flex; align-items: center; gap: .5rem; font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #A67D15; }
+    .eyebrow::before { content: ""; width: 18px; height: 2px; background: #C59B27; border-radius: 2px; }
+    .eyebrow.center::after { content: ""; width: 18px; height: 2px; background: #C59B27; border-radius: 2px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .55rem; font-family: 'Montserrat', sans-serif; font-weight: 800; padding: 1.05rem 1.9rem; border-radius: 12px; line-height: 1.1; transition: .16s cubic-bezier(.2,.8,.2,1); white-space: normal; cursor: pointer; text-align: center; }
+    .btn-gold { background: linear-gradient(135deg, #D4B340 0%, #C59B27 100%); color: #0B192C; border: 0; box-shadow: 0 14px 28px -10px rgba(197,155,39,.55), inset 0 -3px 0 rgba(0,0,0,.15); font-weight: 800; }
+    .btn-gold:hover { transform: translateY(-2px); filter: brightness(1.05); }
+    .btn-gold:active { transform: translateY(1px); }
+    .card { background: #fff; border: 1px solid #E2E8F0; border-radius: 18px; box-shadow: 0 1px 3px rgba(11,25,44,.04); transition: .25s; }
+    .card:hover { border-color: #CBD5E1; box-shadow: 0 16px 38px -18px rgba(11,25,44,.2); transform: translateY(-2px); }
+    .chk { display: flex; gap: .7rem; align-items: flex-start; }
+    .chk svg { flex: 0 0 auto; margin-top: .18rem; color: #1B5428; }
+    @media(min-width: 640px) {
+      .hero-bullets > li { background: #fff; border: 1px solid #E2E8F0; border-radius: 999px; padding: .55rem 1.1rem; box-shadow: 0 1px 2px rgba(11,25,44,.04), 0 8px 22px -10px rgba(11,25,44,.12); align-items: center; font-weight: 600; font-size: 0.88rem; }
+      .hero-bullets > li svg { margin-top: 0; }
+    }
+    .mapimg { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 18px 40px -22px rgba(11,25,44,.35); display: block; }
+    .blob { position: absolute; border-radius: 9999px; filter: blur(60px); pointer-events: none; }
+    .ph { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem; text-align: center; width: 100%; height: 100%; min-height: 100%; background: repeating-linear-gradient(45deg, #F4F0E6 0, #F4F0E6 12px, #EBE5D6 12px, #EBE5D6 24px); color: #1A365D; padding: .85rem; border-radius: inherit; }
+    .ph svg { width: 30px; height: 30px; opacity: .55; }
+    .ph .lab { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; line-height: 1.3; }
+    .ph .sub { font-size: .66rem; color: #627D98; font-weight: 600; }
+    .carousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; cursor: grab; user-select: none; }
+    .carousel::-webkit-scrollbar { display: none; }
+    .carousel.dragging { cursor: grabbing; scroll-behavior: auto; }
+    .carousel.marquee { scroll-snap-type: none; scroll-behavior: auto; }
+    .carousel .slide { scroll-snap-align: center; flex: 0 0 82%; }
+    @media(min-width: 760px) { .carousel .slide { flex: 0 0 42%; } }
+    @media(min-width: 1100px) { .carousel .slide { flex: 0 0 31%; } }
+    .carbtn { position: absolute; top: 42%; width: 44px; height: 44px; border-radius: 999px; background: #fff; border: 1px solid rgba(11,25,44,.12); box-shadow: 0 8px 20px -10px rgba(11,25,44,.3); cursor: pointer; font-size: 20px; color: #102A43; display: none; align-items: center; justify-content: center; z-index: 2; font-weight: bold; }
+    @media(min-width: 760px) { .carbtn { display: flex; } }
+    .carbtn.prev { left: -12px; }
+    .carbtn.next { right: -12px; }
+    .faq-content { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal.active { opacity: 1; transform: none; }
+    .reveal[data-d="1"] { transition-delay: .08s; }
+    .reveal[data-d="2"] { transition-delay: .16s; }
+    img { -webkit-user-drag: none; user-select: none; }
+    * { -webkit-tap-highlight-color: transparent; }
+    html { text-rendering: optimizeLegibility; }
+    ::selection { background: #1A365D; color: #fff; }
+    body h1, body h2, body h3 { text-wrap: balance; }
+    p.balance, .balance { text-wrap: balance; }
+    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #C59B27; outline-offset: 3px; border-radius: 8px; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      html { scroll-behavior: auto !important; }
+      * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- TOPBAR DE MARCA -->
+  <div class="bg-navy-950 text-white py-2.5 px-4 text-center border-b border-navy-800">
+    <div class="inline-flex items-center gap-2.5 text-[11px] sm:text-xs">
+      <svg viewBox="0 0 24 24" fill="none" class="w-4 h-4 shrink-0 text-gold-400">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="font-bold tracking-wide text-gold-300">@mapeiamapas</span>
+      <span class="text-white/30">·</span>
+      <span class="font-medium text-white/90">250 Mapas Mentais para CPA ANBIMA</span>
+      <span class="hidden sm:inline text-white/30">·</span>
+      <span class="hidden sm:inline text-white/70">O material de apoio visual para seus estudos</span>
+    </div>
+  </div>
+
+  <!-- 1. HERO (promessa + tangibilidade + 3 bullets + mockup pack) -->
+  <section class="pt-5 sm:pt-14 pb-10 sm:pb-16 overflow-hidden" style="background: linear-gradient(180deg, #F8F6F0 0%, #FFFFFF 75%, #FBF9F4 100%);">
+    <div class="absolute inset-0 opacity-[0.025] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #0B192C 1px, transparent 0); background-size: 24px 24px;"></div>
+    
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <span class="eyebrow center whitespace-nowrap !text-[0.58rem] sm:!text-[0.74rem] !tracking-[0.1em] sm:!tracking-[0.18em]">Material de Apoio Visual para a CPA</span>
+      
+      <h1 class="font-display text-[1.48rem] sm:text-[2.15rem] lg:text-[2.6rem] font-extrabold leading-[1.18] text-navy-950 mt-2 sm:mt-3 balance max-w-3xl mx-auto">
+        250 mapas mentais prontos para <span class="accent text-navy-700 underline decoration-gold-400 decoration-2 underline-offset-4">entender e revisar a CPA</span> sem apostilas cansativas
+      </h1>
+
+      <!-- MOCKUP DO PACK LOGO ABAIXO DA HEADLINE -->
+      <div class="reveal min-w-0 max-w-[320px] sm:max-w-lg lg:max-w-xl mx-auto mt-4 sm:mt-6">
+        <div class="relative p-1.5 sm:p-2.5 rounded-2xl bg-white/90 border border-navy-100 shadow-card">
+          <img src="mockup-pack.png" alt="Coleção 250 Mapas Mentais para CPA ANBIMA em 4 Cadernos Temáticos" class="w-full h-auto rounded-xl" decoding="async" fetchpriority="high" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-inner py-6 sm:py-10 px-4\' style=\'aspect-ratio:16/10\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\' class=\'w-6 h-6 sm:w-8 sm:h-8\'><path d=\'M4 19.5A2.5 2.5 0 0 1 6.5 17H20\'/><path d=\'M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z\'/></svg><span class=\'lab text-navy-900 mt-1 text-[0.72rem] sm:text-[0.82rem]\'>Mockup da Coleção 250 Mapas</span><span class=\'sub text-ink-500 text-[0.6rem] sm:text-[0.68rem]\'>4 Cadernos Temáticos em PDF A4 de Alta Resolução</span></div>'">
+          <div class="absolute -bottom-2.5 sm:-bottom-3 left-1/2 -translate-x-1/2 bg-navy-900 text-gold-300 border border-gold-500/40 text-[9px] sm:text-xs font-bold uppercase tracking-wider py-0.5 px-3 sm:py-1 sm:px-3.5 rounded-full shadow-md whitespace-nowrap">
+            250 Mapas Organizados em 4 Cadernos
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-6 sm:mt-7 text-ink-600 text-[13px] sm:text-base leading-snug sm:leading-relaxed max-w-xl mx-auto balance font-medium">
+        250 mapas mentais estruturados com exemplos práticos, comparações e pontos de atenção para fixar o conteúdo com rapidez.
+      </p>
+
+      <!-- 3 BULLETS ESTRATÉGICOS -->
+      <ul class="hero-bullets mt-4 sm:mt-6 flex flex-col items-start sm:flex-row sm:flex-wrap sm:items-center sm:justify-center gap-2 sm:gap-3 w-fit mx-auto text-left">
+        <li class="chk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="sm:w-5 sm:h-5"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-800 text-xs sm:text-sm">Formato prático em 1 página por assunto</span>
+        </li>
+        <li class="chk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="sm:w-5 sm:h-5"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-800 text-xs sm:text-sm">Destaca as pegadinhas e diferenças que mais caem</span>
+        </li>
+        <li class="chk">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="sm:w-5 sm:h-5"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-800 text-xs sm:text-sm">Ideal para celular, tablet ou impresso em A4</span>
+        </li>
+      </ul>
+
+      <!-- PROVA SOCIAL RICA COM FOTOS DE PERFIL REAIS -->
+      <div class="mt-6 sm:mt-8 inline-flex items-center gap-2.5 sm:gap-4 bg-white/95 border border-ink-200/90 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full shadow-soft">
+        <div class="flex -space-x-1.5 sm:-space-x-2 shrink-0">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100&q=80" alt="Aluna CPA" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white object-cover shadow-sm">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Aluno CPA" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white object-cover shadow-sm">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&h=100&q=80" alt="Bancária" class="w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white object-cover shadow-sm">
+          <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full ring-2 ring-white bg-navy-900 text-gold-300 flex items-center justify-center text-[8.5px] sm:text-[9px] font-extrabold shadow-sm">+1k</div>
+        </div>
+        <div class="w-px h-6 sm:h-7 bg-ink-200 shrink-0"></div>
+        <div class="leading-tight text-left">
+          <div class="flex items-center gap-1">
+            <div class="flex gap-[1px] text-gold-500">
+              <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16L12 2z"/></svg>
+              <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16L12 2z"/></svg>
+              <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16L12 2z"/></svg>
+              <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16L12 2z"/></svg>
+              <svg class="w-3 h-3 sm:w-3.5 sm:h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.39 4.84L20 8l-4 3.9L17 18l-5-2.6L7 18l1-6.1L4 8l5.61-1.16L12 2z"/></svg>
+            </div>
+            <span class="font-extrabold text-[11px] sm:text-sm text-navy-950">4.9 / 5.0</span>
+          </div>
+          <div class="text-[10px] sm:text-[11px] text-ink-600 mt-0.5 font-medium">
+            <strong class="text-navy-900">+1.850</strong> estudantes e profissionais aprovam
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. AGITAÇÃO DE DOR (Empatia com a rotina de estudos) -->
+  <section class="py-16 sm:py-24 overflow-hidden" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 16%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="eyebrow center" style="color: #9E2A2B;">Reconhece essa cena?</span>
+        <h2 class="font-display font-extrabold text-navy-950 leading-tight max-w-3xl mx-auto mt-3">
+          Estudar para a CPA não precisa ser um labirinto de <span class="text-navy-700">textos densos e termos confusos</span>.
+        </h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal relative flex justify-center lg:justify-end order-1">
+          <div class="absolute bottom-2 w-72 sm:w-80 h-36 rounded-[50%] bg-navy-200/40 blur-2xl"></div>
+          <div class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-card border border-ink-200 bg-white p-3">
+            <img src="dor-estudo.png" alt="Pessoa sobrecarregada com apostilas densas de estudos para certificação bancária" loading="lazy" class="w-full h-auto rounded-xl object-cover" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-inner py-14 px-4\' style=\'aspect-ratio:4/3\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'#9E2A2B\' stroke-width=\'1.8\'><circle cx=\'12\' cy=\'12\' r=\'10\'/><path d=\'M12 8v4m0 4h.01\'/></svg><span class=\'lab text-navy-900 mt-2\'>O peso dos textos longos</span><span class=\'sub text-ink-500\'>Apostilas densas geram cansaço e pouca retenção</span></div>'">
+          </div>
+        </div>
+
+        <div class="reveal order-2">
+          <ul class="space-y-4">
+            <li class="chk">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              <span class="text-ink-700 font-medium">Você abre apostilas com centenas de páginas e, após 15 minutos de leitura densa, sente que não absorveu quase nada.</span>
+            </li>
+            <li class="chk">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              <span class="text-ink-700 font-medium">Termos técnicos, siglas parecidas e regras de tributação começam a se misturar na sua cabeça na hora de resolver exercícios.</span>
+            </li>
+            <li class="chk">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              <span class="text-ink-700 font-medium">A rotina corrida de trabalho e compromissos deixa pouco tempo livre para revisar matérias extensas do zero.</span>
+            </li>
+            <li class="chk">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9E2A2B" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg>
+              <span class="text-ink-700 font-medium">Fica a sensação constante de insegurança sobre conceitos fundamentais do mercado financeiro que costumam ser cobrados em prova.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- E O PIOR -->
+      <div class="mt-12 sm:mt-16 max-w-3xl mx-auto text-center reveal">
+        <p class="font-display font-extrabold text-xl leading-snug sm:text-2xl sm:leading-tight md:text-3xl text-navy-950 balance">
+          <span style="color: #9E2A2B;">E o pior:</span> muita gente começa com dedicação, mas trava no cansaço de textos longos e sem estrutura visual.
+        </p>
+      </div>
+
+      <!-- A CULPA NÃO É SUA -->
+      <div class="mt-9 max-w-2xl mx-auto reveal">
+        <div class="relative rounded-3xl bg-white border-2 border-gold-300 px-6 sm:px-10 pt-12 pb-8 text-center shadow-card">
+          <div class="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-gold-500 text-navy-950 flex items-center justify-center shadow-lift ring-4 ring-white font-display font-black text-2xl">
+            !
+          </div>
+          <div class="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-navy-950 mb-3">A culpa não é sua.</div>
+          <p class="text-ink-700 text-base sm:text-lg leading-relaxed font-medium">
+            O mercado financeiro é naturalmente técnico e repleto de detalhes. O problema nunca foi a sua capacidade de aprender, mas sim depender exclusivamente de apostilas monótonas para fixar conceitos complexos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SOLUÇÃO & MECANISMO NOMEADO -->
+  <section class="pt-8 sm:pt-12 pb-16 sm:pb-24" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 14%, #FAF9F6 100%);">
+    <div class="divtop"></div>
+    
+    <div class="reveal bg-navy-900 text-white py-6 sm:py-8 px-5 text-center mb-12 sm:mb-16 shadow-[0_18px_44px_-26px_rgba(11,25,44,.65)]">
+      <span class="font-display font-bold text-lg sm:text-2xl leading-snug max-w-4xl mx-auto block text-white/95">
+        Você precisa de um método visual que <span class="text-gold-300">sintetize o essencial em poucos minutos</span>
+      </span>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+        <span class="eyebrow center">A Solução Visual</span>
+        <h2 class="mt-4">O método que <span class="accent text-navy-700">organiza e sintetiza</span> cada tema do mercado financeiro</h2>
+        <p class="mt-4 text-ink-600 text-base sm:text-lg leading-relaxed font-medium">
+          Construído sob o <strong class="text-navy-950">Método de Fixação Visual em 1 Página (@mapeiamapas)</strong>. Cada assunto vira uma página estruturada e autoexplicativa: você bate o olho, entende a lógica e fixa na memória.
+        </p>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <div class="p-2.5 rounded-2xl bg-white border border-ink-200 shadow-card">
+            <img src="prev-mapa01.png" class="mapimg" loading="lazy" alt="Exemplo de mapa mental com estrutura visual de perguntas e pegadinhas" onerror="this.outerHTML='<div class=\'ph rounded-xl py-16 px-6\' style=\'aspect-ratio:4/3\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><path d=\'M3 9h18M9 21V9\'/></svg><span class=\'lab text-navy-900 mt-2\'>Exemplo de Mapa Mental Visual</span><span class=\'sub text-ink-500\'>O que é · Para que serve · Como funciona · Pegadinhas</span></div>'">
+          </div>
+        </div>
+
+        <div class="reveal" data-d="1">
+          <p class="font-display font-extrabold text-navy-950 text-xl sm:text-2xl">Em poucos dias você vai notar:</p>
+          <ul class="mt-4 space-y-3">
+            <li class="chk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-ink-700 font-medium">Revisões completas e focadas em menos de 3 minutos por tema</span>
+            </li>
+            <li class="chk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-ink-700 font-medium">Fim da confusão entre CDB, LCI, LCA, Debêntures e COE</span>
+            </li>
+            <li class="chk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-ink-700 font-medium">Regras de tributação, prazos e come-cotas gravadas com clareza</span>
+            </li>
+            <li class="chk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-ink-700 font-medium">Mais segurança para acompanhar suas aulas e resolver simulados</span>
+            </li>
+            <li class="chk">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="text-ink-700 font-medium">A facilidade de estudar em qualquer lugar pelo celular ou impresso</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. AS 4 CHAVES DA COLEÇÃO (4 Cadernos Temáticos) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 14%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="eyebrow center">Organização Inteligente</span>
+        <h2 class="mt-3">Os <span class="accent text-navy-700">4 Cadernos Temáticos</span> da sua coleção</h2>
+        <p class="mt-3 text-ink-600 max-w-2xl mx-auto text-base sm:text-lg font-medium">250 mapas distribuídos por módulos de forma lógica e progressiva.</p>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 reveal">
+        <!-- Caderno 1 -->
+        <div class="card p-5 flex flex-col justify-between border-t-4 border-t-navy-700">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-navy-700 bg-navy-50 px-2.5 py-1 rounded-full">Caderno 01</span>
+              <span class="text-xs font-bold text-ink-500">70 Mapas</span>
+            </div>
+            <h3 class="font-display font-bold text-navy-950 text-lg leading-snug">Sistema Financeiro e Economia</h3>
+            <p class="text-xs text-ink-600 mt-2 leading-relaxed">
+              Estrutura do SFN, órgãos normativos (CMN, CNSP, CNPC), supervisores (BACEN, CVM, SUSEP, PREVIC), operadores, políticas econômicas e indicadores (IPCA, IGP-M, Selic, CDI, PTAX).
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-ink-100 text-[11px] font-bold text-navy-800">
+            Mapas 001 ao 070
+          </div>
+        </div>
+
+        <!-- Caderno 2 -->
+        <div class="card p-5 flex flex-col justify-between border-t-4 border-t-gold-500">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-gold-700 bg-gold-50 px-2.5 py-1 rounded-full">Caderno 02</span>
+              <span class="text-xs font-bold text-ink-500">48 Mapas</span>
+            </div>
+            <h3 class="font-display font-bold text-navy-950 text-lg leading-snug">Riscos, Matemática e Infraestrutura</h3>
+            <p class="text-xs text-ink-600 mt-2 leading-relaxed">
+              Riscos de mercado, crédito e liquidez, juros simples e compostos, rentabilidade real e nominal, volatilidade, índice Sharpe, clearing houses e liquidação.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-ink-100 text-[11px] font-bold text-gold-700">
+            Mapas 071 ao 118
+          </div>
+        </div>
+
+        <!-- Caderno 3 -->
+        <div class="card p-5 flex flex-col justify-between border-t-4 border-t-navy-700">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-navy-700 bg-navy-50 px-2.5 py-1 rounded-full">Caderno 03</span>
+              <span class="text-xs font-bold text-ink-500">75 Mapas</span>
+            </div>
+            <h3 class="font-display font-bold text-navy-950 text-lg leading-snug">Distribuição e Produtos de Investimento</h3>
+            <p class="text-xs text-ink-600 mt-2 leading-relaxed">
+              Suitability, código de conduta, Renda Fixa (CDB, LCI, LCA, CRI, CRA, Debêntures, Títulos Públicos Federais), Renda Variável (Ações, BDRs, ETFs, Governança) e COE.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-ink-100 text-[11px] font-bold text-navy-800">
+            Mapas 119 ao 193
+          </div>
+        </div>
+
+        <!-- Caderno 4 -->
+        <div class="card p-5 flex flex-col justify-between border-t-4 border-t-gold-500">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-gold-700 bg-gold-50 px-2.5 py-1 rounded-full">Caderno 04</span>
+              <span class="text-xs font-bold text-ink-500">57 Mapas</span>
+            </div>
+            <h3 class="font-display font-bold text-navy-950 text-lg leading-snug">Fundos, Previdência e Crédito</h3>
+            <p class="text-xs text-ink-600 mt-2 leading-relaxed">
+              Fundos de Investimento (classificação CVM, come-cotas, taxas, marcação a mercado), FIIs, Previdência Complementar (PGBL e VGBL, tabelas progressiva e regressiva) e crédito.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-ink-100 text-[11px] font-bold text-gold-700">
+            Mapas 194 ao 250
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. VEJA NA PRÁTICA (Carrossel Infinito de Prévias) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 14%, #FAF9F6 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-8 reveal">
+        <span class="eyebrow center">Veja na prática</span>
+        <h2 class="mt-3">São <span class="accent text-navy-700">250 páginas visuais</span> prontas para consultar</h2>
+        <p class="mt-4 text-ink-600 text-base sm:text-lg font-medium">
+          Diagramadas em formato A4, com fundo branco para leitura nítida em telas ou impressão econômica.
+        </p>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="relative reveal">
+        <button class="carbtn prev" onclick="slide(-1,'car2')" aria-label="Anterior">‹</button>
+        <div class="carousel" id="car2">
+          <div class="slide">
+            <img src="prev-mapa01.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Sistema Financeiro" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: SFN e Órgãos</span><span class=\'sub text-ink-500\'>Caderno 1 · Mapa Visual</span></div>'">
+          </div>
+          <div class="slide">
+            <img src="prev-mapa02.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Riscos Financeiros" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: Riscos de Mercado e Crédito</span><span class=\'sub text-ink-500\'>Caderno 2 · Mapa Visual</span></div>'">
+          </div>
+          <div class="slide">
+            <img src="prev-mapa03.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Renda Fixa e Títulos" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: CDB, LCI, LCA e Debêntures</span><span class=\'sub text-ink-500\'>Caderno 3 · Mapa Visual</span></div>'">
+          </div>
+          <div class="slide">
+            <img src="prev-mapa04.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Fundos e Come-cotas" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: Come-cotas e Classificação CVM</span><span class=\'sub text-ink-500\'>Caderno 4 · Mapa Visual</span></div>'">
+          </div>
+          <div class="slide">
+            <img src="prev-mapa05.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Previdência PGBL e VGBL" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: PGBL vs VGBL</span><span class=\'sub text-ink-500\'>Caderno 4 · Mapa Visual</span></div>'">
+          </div>
+          <div class="slide">
+            <img src="prev-mapa06.png" class="mapimg" loading="lazy" alt="Prévia do Mapa Indicadores Econômicos" onerror="this.outerHTML='<div class=\'ph rounded-xl shadow-sm\' style=\'aspect-ratio:16/10;border-radius:10px\'><span class=\'lab text-navy-900\'>Prévia: IPCA, IGP-M e Selic</span><span class=\'sub text-ink-500\'>Caderno 1 · Mapa Visual</span></div>'">
+          </div>
+        </div>
+        <button class="carbtn next" onclick="slide(1,'car2')" aria-label="Próximo">›</button>
+      </div>
+
+      <ul class="mt-10 max-w-xl mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-3 reveal">
+        <li class="chk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-700 font-medium">250 mapas em alta resolução diagramados em A4</span>
+        </li>
+        <li class="chk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-700 font-medium">Fundo branco para conforto visual e economia de tinta</span>
+        </li>
+        <li class="chk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-700 font-medium">Estrutura com perguntas essenciais por conceito</span>
+        </li>
+        <li class="chk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#1A365D"/><path d="M8 12.5l2.5 2.5 5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="text-ink-700 font-medium">Destaque para termos parecidos e pegadinhas</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. O QUE MUDA NA SUA ROTINA DE ESTUDOS (Faixa Navy + 3 cards) -->
+  <section class="py-16 sm:py-24 overflow-hidden text-white" style="background: linear-gradient(168deg, #102A43 0%, #0B192C 52%, #060E18 100%);">
+    <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(circle at 20% 30%, #D4B340 0%, transparent 40%), radial-gradient(circle at 80% 70%, #1A365D 0%, transparent 45%);"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6">
+      <div class="max-w-3xl reveal mb-12 sm:mb-16">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="h-px flex-1 max-w-[3rem] bg-gold-400"></span>
+          <span class="text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em] text-gold-300">O que muda na sua rotina</span>
+        </div>
+        <h2 class="balance leading-[1.12] text-white">
+          Menos cansaço, mais clareza. <span class="text-gold-300">Uma rotina de estudos produtiva.</span>
+        </h2>
+        <p class="mt-4 text-base sm:text-lg text-white/80 max-w-2xl leading-relaxed font-medium">
+          Quando você visualiza as conexões e os quadros comparativos, para de sofrer com leituras monótonas. Seus estudos ganham ritmo e consistência.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-3 gap-4 sm:gap-5">
+        <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 reveal p-6 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold-400/10 text-gold-300 flex items-center justify-center mb-4 border border-gold-400/20">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Revisão de 3 minutos</h3>
+            <p class="text-white/75 text-sm mt-2 leading-relaxed font-normal">
+              Abra o mapa do assunto que acabou de ver na aula e faça uma checagem visual imediata para fixar.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 reveal p-6 flex flex-col justify-between" data-d="1">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold-400/10 text-gold-300 flex items-center justify-center mb-4 border border-gold-400/20">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Diferenças claras</h3>
+            <p class="text-white/75 text-sm mt-2 leading-relaxed font-normal">
+              Quadros comparativos lado a lado que eliminam a confusão entre produtos, regras e alíquotas.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl overflow-hidden bg-white/5 border border-white/10 reveal p-6 flex flex-col justify-between" data-d="2">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-gold-400/10 text-gold-300 flex items-center justify-center mb-4 border border-gold-400/20">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Apoio para simulados</h3>
+            <p class="text-white/75 text-sm mt-2 leading-relaxed font-normal">
+              Teve dúvida em uma questão? Encontre a explicação visual no caderno correspondente em segundos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BÔNUS EXCLUSIVOS (Cards com capa 1:1 e badge tracejado) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 14%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="eyebrow center">Bônus inclusos</span>
+        <h2 class="mt-3">E ainda recebe estes <span class="accent text-navy-700">4 bônus práticos, sem pagar nada a mais</span></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+        <!-- Bônus 1 -->
+        <div class="card overflow-hidden flex flex-col justify-between">
+          <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/50">
+            <img src="bonus-pegadinhas.png" alt="Capa Guia Rápido de Pegadinhas e Siglas Parecidas" loading="lazy" class="w-full h-full object-contain" onerror="this.outerHTML='<div class=\'ph rounded-xl\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><path d=\'M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z\'/><line x1=\'12\' y1=\'9\' x2=\'12\' y2=\'13\'/><line x1=\'12\' y1=\'17\' x2=\'12.01\' y2=\'17\'/></svg><span class=\'lab text-navy-900 mt-1\'>Capa Bônus 01</span></div>'">
+          </div>
+          <div class="p-4">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[0.12em] text-gold-700 border border-dashed border-gold-400 rounded-full px-2 py-0.5 mb-2">Bônus 01</span>
+            <div class="font-bold text-navy-950 text-sm sm:text-base leading-snug">Guia de Pegadinhas e Siglas Parecidas</div>
+            <p class="text-[12px] text-ink-600 mt-1.5 leading-snug">As pegadinhas clássicas que mais derrubam candidatos em provas da ANBIMA.</p>
+            <div class="mt-2 text-xs">
+              <span class="text-ink-400 line-through font-semibold">De R$ 37</span>
+              <span class="text-green-700 font-extrabold ml-1">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 2 -->
+        <div class="card overflow-hidden flex flex-col justify-between">
+          <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/50">
+            <img src="bonus-tributacao.png" alt="Capa Tabela Comparativa de Tributação e Prazos" loading="lazy" class="w-full h-full object-contain" onerror="this.outerHTML='<div class=\'ph rounded-xl\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><line x1=\'3\' y1=\'9\' x2=\'21\' y2=\'9\'/><line x1=\'9\' y1=\'21\' x2=\'9\' y2=\'9\'/></svg><span class=\'lab text-navy-900 mt-1\'>Capa Bônus 02</span></div>'">
+          </div>
+          <div class="p-4">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[0.12em] text-gold-700 border border-dashed border-gold-400 rounded-full px-2 py-0.5 mb-2">Bônus 02</span>
+            <div class="font-bold text-navy-950 text-sm sm:text-base leading-snug">Tabela Visual de Tributação e Prazos</div>
+            <p class="text-[12px] text-ink-600 mt-1.5 leading-snug">Tabela comparativa de IOF, come-cotas e IR regressivo para consulta rápida.</p>
+            <div class="mt-2 text-xs">
+              <span class="text-ink-400 line-through font-semibold">De R$ 29</span>
+              <span class="text-green-700 font-extrabold ml-1">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 3 -->
+        <div class="card overflow-hidden flex flex-col justify-between">
+          <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/50">
+            <img src="bonus-checklist.png" alt="Capa Checklist Inteligente da Semana de Prova" loading="lazy" class="w-full h-full object-contain" onerror="this.outerHTML='<div class=\'ph rounded-xl\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><polyline points=\'9 11 12 14 22 4\'/><path d=\'M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\'/></svg><span class=\'lab text-navy-900 mt-1\'>Capa Bônus 03</span></div>'">
+          </div>
+          <div class="p-4">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[0.12em] text-gold-700 border border-dashed border-gold-400 rounded-full px-2 py-0.5 mb-2">Bônus 03</span>
+            <div class="font-bold text-navy-950 text-sm sm:text-base leading-snug">Checklist da Semana de Prova</div>
+            <p class="text-[12px] text-ink-600 mt-1.5 leading-snug">Roteiro de checagem final dos pontos essenciais nos dias que antecedem seu exame.</p>
+            <div class="mt-2 text-xs">
+              <span class="text-ink-400 line-through font-semibold">De R$ 19</span>
+              <span class="text-green-700 font-extrabold ml-1">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bônus 4 -->
+        <div class="card overflow-hidden flex flex-col justify-between">
+          <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/50">
+            <img src="bonus-cronograma.png" alt="Capa Plano de Revisão Rápida em 14 Dias" loading="lazy" class="w-full h-full object-contain" onerror="this.outerHTML='<div class=\'ph rounded-xl\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><rect x=\'3\' y=\'4\' width=\'18\' height=\'18\' rx=\'2\' ry=\'2\'/><line x1=\'16\' y1=\'2\' x2=\'16\' y2=\'6\'/><line x1=\'8\' y1=\'2\' x2=\'8\' y2=\'6\'/><line x1=\'3\' y1=\'10\' x2=\'21\' y2=\'10\'/></svg><span class=\'lab text-navy-900 mt-1\'>Capa Bônus 04</span></div>'">
+          </div>
+          <div class="p-4">
+            <span class="inline-block text-[10px] font-bold uppercase tracking-[0.12em] text-gold-700 border border-dashed border-gold-400 rounded-full px-2 py-0.5 mb-2">Bônus 04</span>
+            <div class="font-bold text-navy-950 text-sm sm:text-base leading-snug">Plano de Revisão em 14 Dias</div>
+            <p class="text-[12px] text-ink-600 mt-1.5 leading-snug">Cronograma diário distribuindo os 250 mapas para uma revisão completa e sem estresse.</p>
+            <div class="mt-2 text-xs">
+              <span class="text-ink-400 line-through font-semibold">De R$ 27</span>
+              <span class="text-green-700 font-extrabold ml-1">HOJE: GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. AUTORIDADE (@mapeiamapas) -->
+  <section class="py-16 sm:py-24 overflow-hidden" style="background: linear-gradient(165deg, #102A43 0%, #0B192C 55%, #060E18 100%);">
+    <div class="blob w-[24rem] h-[24rem] -top-24 -right-20" style="background: rgba(212, 179, 64, .12)"></div>
+    <div class="blob w-[20rem] h-[20rem] -bottom-24 -left-16" style="background: rgba(26, 54, 93, .25)"></div>
+    
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div class="reveal relative">
+        <div class="relative rounded-3xl overflow-hidden ring-1 ring-white/15 shadow-lift p-4 bg-white/5">
+          <img src="autoridade-mapeia.png" alt="Equipe @mapeiamapas didática visual especializada em mercado financeiro" class="w-full h-auto rounded-2xl block" loading="lazy" onerror="this.outerHTML='<div class=\'ph rounded-2xl py-16 px-6 bg-navy-800 text-gold-300\' style=\'aspect-ratio:3/2\'><svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.8\'><path d=\'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\'/></svg><span class=\'lab text-white text-lg mt-2\'>@mapeiamapas</span><span class=\'sub text-gold-300\'>Didática Visual & Estruturação de Conceitos</span></div>'">
+        </div>
+        <div class="absolute -bottom-5 left-5 sm:left-auto sm:-right-4 bg-white rounded-2xl px-5 py-3 shadow-card flex items-center gap-3">
+          <span class="font-display font-extrabold text-3xl text-navy-900 leading-none">250</span>
+          <span class="text-[12px] leading-tight font-semibold text-ink-700">mapas<br>estruturados</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <span class="eyebrow" style="color: #E4CB6E">Quem produz o material</span>
+        <h2 class="mt-4 text-white">Conheça a <span style="color: #E4CB6E">@mapeiamapas</span></h2>
+        <div class="gold-rule" style="margin: 18px 0 0"></div>
+        <div class="mt-6 space-y-4 text-[0.98rem] leading-relaxed text-white/85 font-normal">
+          <p>
+            A <strong class="text-white font-semibold">@mapeiamapas</strong> nasceu com o propósito de transformar matérias densas e técnicas em experiências visuais claras, práticas e prazerosas de estudar.
+          </p>
+          <p>
+            Nossos materiais já apoiaram centenas de estudantes e profissionais que buscam ingressar ou se consolidar no <strong class="text-white font-semibold">mercado financeiro</strong>, eliminando o cansaço de textos longos e acelerando a memorização dos temas mais importantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PARA QUEM É (5 Personas + Card CTA) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 14%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-5xl mx-auto px-5 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <span class="eyebrow center">Pra quem é</span>
+        <h2 class="mt-3">Esse material é <span class="accent text-navy-700">para você que...</span></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 reveal">
+        <div class="card p-5 sm:p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-navy-50 text-navy-700 flex items-center justify-center shrink-0 border border-navy-100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-navy-950 text-base">Iniciantes na Carreira Bancária</div>
+            <p class="text-xs sm:text-sm text-ink-600 mt-1 leading-snug">Quer ingressar em bancos, cooperativas de crédito ou corretoras e precisa compreender os conceitos essenciais do mercado.</p>
+          </div>
+        </div>
+
+        <div class="card p-5 sm:p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center shrink-0 border border-gold-100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-navy-950 text-base">Estudantes da CPA-10 e CPA-20</div>
+            <p class="text-xs sm:text-sm text-ink-600 mt-1 leading-snug">Já estuda por cursos ou videoaulas e precisa de um material visual de apoio para consolidar e revisar o conteúdo.</p>
+          </div>
+        </div>
+
+        <div class="card p-5 sm:p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-navy-50 text-navy-700 flex items-center justify-center shrink-0 border border-navy-100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-navy-950 text-base">Pouco Tempo na Rotina</div>
+            <p class="text-xs sm:text-sm text-ink-600 mt-1 leading-snug">Trabalha o dia todo e precisa aproveitar pequenos intervalos para revisar no celular, no tablet ou com páginas impressas.</p>
+          </div>
+        </div>
+
+        <div class="card p-5 sm:p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-gold-50 text-gold-700 flex items-center justify-center shrink-0 border border-gold-100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6"><path d="M12 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-navy-950 text-base">Prefere Aprendizado Visual</div>
+            <p class="text-xs sm:text-sm text-ink-600 mt-1 leading-snug">Trava com blocos extensos de texto e aprende muito mais rápido com esquemas visuais, tabelas e destaques.</p>
+          </div>
+        </div>
+
+        <div class="card p-5 sm:p-6 flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-navy-50 text-navy-700 flex items-center justify-center shrink-0 border border-navy-100">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <div>
+            <div class="font-bold text-navy-950 text-base">Consulta Rápida em Simulados</div>
+            <p class="text-xs sm:text-sm text-ink-600 mt-1 leading-snug">Quer um guia prático para checar dúvidas pontuais durante a resolução de exercícios sem ter que caçar em livros.</p>
+          </div>
+        </div>
+
+        <!-- Card CTA se identificou -->
+        <a href="#oferta" class="group rounded-2xl p-5 sm:p-6 text-white flex items-center gap-4 transition-all shadow-md hover:shadow-lg" style="background: linear-gradient(135deg, #102A43, #0B192C);">
+          <div class="w-12 h-12 rounded-xl bg-gold-400 text-navy-950 flex items-center justify-center shrink-0 font-bold">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19l12-12-1.41-1.42z"/></svg>
+          </div>
+          <div class="flex-1">
+            <div class="font-bold text-white text-base">Se identificou?</div>
+            <p class="text-xs sm:text-sm text-white/80 mt-0.5 leading-snug">O material foi feito para a sua rotina. Veja a oferta especial.</p>
+          </div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" class="w-5 h-5 text-gold-300 shrink-0 transition-transform group-hover:translate-x-1"><path d="M5 12h14m-6-6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. DEPOIMENTOS (Avaliações com fotos reais de perfil) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 14%, #FAF9F6 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="eyebrow center">Depoimentos</span>
+        <h2 class="mt-3">O que dizem quem já estuda com os <span class="accent text-navy-700">mapas visuais</span></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+        <!-- Depoimento 1 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Gabriel F.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Gabriel F.</div>
+              <div class="text-xs text-ink-500 font-medium">Assistente Bancário · SP</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 3 dias</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">Eu travava toda vez que lia sobre come-cotas e fundos em apostila. O mapa de fundos resumiu tudo em uma página só. Muito claro!</p>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Mariana L.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Mariana L.</div>
+              <div class="text-xs text-ink-500 font-medium">Estudante CPA-20 · MG</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 1 semana</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">Imprimi os 4 cadernos em A4 e deixo na minha mesa. Uso para revisar antes de cada bateria de simulados. Vale cada centavo.</p>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Rodrigo C.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Rodrigo C.</div>
+              <div class="text-xs text-ink-500 font-medium">Cooperativa de Crédito · PR</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 4 dias</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">As comparações entre CDB, LCI e LCA eliminaram a confusão que eu tinha na cabeça. Formato prático e muito direto ao ponto.</p>
+        </div>
+
+        <!-- Depoimento 4 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Fernanda A.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Fernanda A.</div>
+              <div class="text-xs text-ink-500 font-medium">Estagiária de Finanças · RJ</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 6 dias</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">Trabalho o dia inteiro e só tenho a noite para estudar. Conseguir revisar tópicos inteiros em 3 minutos salvou a minha rotina.</p>
+        </div>
+
+        <!-- Depoimento 5 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Thiago S.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Thiago S.</div>
+              <div class="text-xs text-ink-500 font-medium">Candidato CPA-10 · DF</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 2 dias</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">O bônus de pegadinhas e siglas é excelente. Mostra exatamente onde as bancas tentam confundir a gente.</p>
+        </div>
+
+        <!-- Depoimento 6 -->
+        <div class="card p-5">
+          <div class="flex items-center gap-3 mb-3">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=120&h=120&q=80" class="w-11 h-11 rounded-full object-cover ring-2 ring-gold-400/40 shadow-sm" alt="Aline P.">
+            <div>
+              <div class="font-bold text-navy-950 text-sm">Aline P.</div>
+              <div class="text-xs text-ink-500 font-medium">Atendimento Bancário · SP</div>
+              <div class="text-gold-500 text-xs mt-0.5">★★★★★ <span class="text-ink-400">· há 1 semana</span></div>
+            </div>
+          </div>
+          <p class="text-ink-700 text-xs sm:text-sm leading-relaxed">Uso no iPad com o app de anotações e ficou perfeito. A identidade visual dos mapas é limpa e não cansa a vista.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. COMO COMEÇAR (3 passos simples) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 14%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="eyebrow center">3 passos simples</span>
+        <h2 class="mt-3">É simples: <span class="accent text-navy-700">baixe, abra e revise</span></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5 sm:gap-6 relative">
+        <div class="hidden md:block absolute top-[5.5rem] left-[18%] right-[18%] h-0.5 border-t-2 border-dashed border-navy-200 z-0"></div>
+        
+        <!-- Passo 1 -->
+        <div class="card p-7 text-center reveal relative">
+          <div class="relative z-10 mx-auto w-24 h-24">
+            <div class="absolute inset-0 rounded-full bg-navy-50"></div>
+            <div class="absolute inset-2 rounded-full bg-white border-2 border-navy-100"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-navy-800">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="absolute -top-2 -left-2 w-9 h-9 rounded-full bg-navy-900 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center shadow-lift border-[3px] border-white">1</div>
+          </div>
+          <div class="mt-5 text-xs font-bold uppercase tracking-widest text-navy-700">Passo 1</div>
+          <h3 class="font-display font-bold text-navy-950 text-xl mt-1">Receba o Acesso</h3>
+          <p class="text-xs sm:text-sm text-ink-600 mt-2">Após a confirmação do pagamento, você recebe imediatamente o link de download no seu e-mail.</p>
+        </div>
+
+        <!-- Passo 2 -->
+        <div class="card p-7 text-center reveal relative" data-d="1">
+          <div class="relative z-10 mx-auto w-24 h-24">
+            <div class="absolute inset-0 rounded-full bg-gold-50"></div>
+            <div class="absolute inset-2 rounded-full bg-white border-2 border-gold-100"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-gold-700">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div class="absolute -top-2 -left-2 w-9 h-9 rounded-full bg-gold-500 text-navy-950 font-display font-extrabold text-lg flex items-center justify-center shadow-lift border-[3px] border-white">2</div>
+          </div>
+          <div class="mt-5 text-xs font-bold uppercase tracking-widest text-gold-700">Passo 2</div>
+          <h3 class="font-display font-bold text-navy-950 text-xl mt-1">Abra no seu Dispositivo</h3>
+          <p class="text-xs sm:text-sm text-ink-600 mt-2">Acesse os 4 cadernos em PDF no celular, tablet, computador ou imprima em formato A4.</p>
+        </div>
+
+        <!-- Passo 3 -->
+        <div class="card p-7 text-center reveal relative" data-d="2">
+          <div class="relative z-10 mx-auto w-24 h-24">
+            <div class="absolute inset-0 rounded-full bg-navy-50"></div>
+            <div class="absolute inset-2 rounded-full bg-white border-2 border-navy-100"></div>
+            <div class="absolute inset-0 flex items-center justify-center text-navy-800">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-10 h-10"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="absolute -top-2 -left-2 w-9 h-9 rounded-full bg-navy-900 text-gold-300 font-display font-extrabold text-lg flex items-center justify-center shadow-lift border-[3px] border-white">3</div>
+          </div>
+          <div class="mt-5 text-xs font-bold uppercase tracking-widest text-navy-700">Passo 3</div>
+          <h3 class="font-display font-bold text-navy-950 text-xl mt-1">Revise com Agilidade</h3>
+          <p class="text-xs sm:text-sm text-ink-600 mt-2">Consulte os mapas antes de simulados e consolide a matéria com leveza e clareza visual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. OFERTA DE LANÇAMENTO (Card Unificado de Oferta) -->
+  <section id="oferta" class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 14%, #FAF9F6 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-3xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-8 sm:mb-10 reveal">
+        <span class="eyebrow center">Oferta de lançamento</span>
+        <h2 class="mt-3">Quanto vale estudar com <span class="accent text-navy-700">clareza e sem cansaço</span>?</h2>
+        <p class="mt-2.5 text-ink-600 text-sm sm:text-base font-medium">Sem mensalidades. Sem assinaturas. Acesso vitalício aos 4 cadernos.</p>
+      </div>
+
+      <!-- Card Único e Integrado de Oferta -->
+      <div class="max-w-xl mx-auto reveal" data-d="1">
+        <div class="card p-5 sm:p-8 text-center border-2 border-navy-700/30 shadow-card">
+          <img src="mockup-pack.png" alt="Coleção Completa 250 Mapas para CPA ANBIMA" loading="lazy" class="w-full max-w-sm sm:max-w-md mx-auto mb-5" onerror="this.outerHTML='<div class=\'ph rounded-xl mx-auto mb-5 py-6 sm:py-8 px-4\' style=\'aspect-ratio:16/9;max-width:24rem\'><span class=\'lab text-navy-900\'>Coleção 250 Mapas + 4 Bônus</span></div>'">
+          
+          <!-- Lista de Tudo o Que Está Incluído (Dentro do Bloco) -->
+          <div class="rounded-xl border border-ink-200 bg-ink-50/70 p-4 sm:p-5 text-left mb-6">
+            <div class="text-[10px] sm:text-xs font-extrabold uppercase tracking-[0.14em] text-navy-800 mb-3 flex items-center gap-1.5">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4 text-gold-600"><polyline points="20 6 9 17 4 12"/></svg>
+              Tudo o que está incluído na sua coleção:
+            </div>
+            <ul class="space-y-2 text-[12.5px] sm:text-[14px] text-ink-700 font-medium">
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Caderno 01 · Sistema Financeiro e Economia (70 Mapas)</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 47</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Caderno 02 · Riscos, Matemática e Infraestrutura (48 Mapas)</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 47</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Caderno 03 · Distribuição e Produtos (75 Mapas)</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 47</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Caderno 04 · Fundos, Previdência e Crédito (57 Mapas)</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 47</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Bônus 01 · Guia de Pegadinhas e Siglas</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 37</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Bônus 02 · Tabela Visual de Tributação</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 29</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Bônus 03 · Checklist da Semana de Prova</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 19</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pb-1.5 border-b border-ink-200/70">
+                <span class="flex-1 min-w-0">Bônus 04 · Plano de Revisão em 14 Dias</span>
+                <span class="font-bold text-navy-900 shrink-0 text-xs sm:text-sm">R$ 27</span>
+              </li>
+              <li class="flex justify-between items-baseline gap-2 pt-1">
+                <span class="font-bold text-navy-950 text-xs sm:text-sm">Valor total de tudo somado</span>
+                <span class="font-extrabold text-navy-800 text-sm sm:text-base shrink-0">R$ 300</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bloco de Preço Real -->
+          <div class="text-xs text-ink-400 line-through font-bold mb-1">De R$ 300</div>
+          <div class="text-ink-600 text-xs sm:text-sm font-semibold">Hoje, com os 4 cadernos e todos os bônus inclusos por:</div>
+          <div class="font-display font-black text-5xl sm:text-6xl text-navy-950 leading-none mt-2">R$ 47</div>
+          <div class="text-ink-600 mt-1.5 text-xs sm:text-sm font-medium">pagamento único no Pix ou cartão · ou em até 6x no cartão</div>
+          
+          <a href="#checkout" class="btn btn-gold w-full mt-6 !py-4 text-sm sm:text-base uppercase tracking-wide shadow-md">
+            Quero meu acesso aos 250 mapas agora
+          </a>
+
+          <div class="flex justify-center gap-3 sm:gap-4 mt-4 flex-wrap text-[10.5px] sm:text-[11px] font-bold uppercase tracking-wide text-navy-800">
+            <span class="inline-flex items-center gap-1">
+              <svg class="w-4 h-4 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>Acesso vitalício
+            </span>
+            <span class="inline-flex items-center gap-1">
+              <svg class="w-4 h-4 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>Acesso imediato
+            </span>
+            <span class="inline-flex items-center gap-1">
+              <svg class="w-4 h-4 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>Formato PDF A4
+            </span>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-ink-100 flex items-center justify-center gap-3 text-ink-400 text-xs font-semibold">
+            <span>🔒 Pagamento Seguro</span>
+            <span>·</span>
+            <span>PIX & Cartão</span>
+            <span>·</span>
+            <span>Entrega Imediata</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3 max-w-xs mx-auto mt-6 text-center">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1A365D" stroke-width="1.8" class="w-7 h-7 mx-auto mb-1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div class="text-[11px] font-bold text-ink-700 leading-tight">Compra<br>SEGURA</div>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1A365D" stroke-width="1.8" class="w-7 h-7 mx-auto mb-1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            <div class="text-[11px] font-bold text-ink-700 leading-tight">Satisfação<br>GARANTIDA</div>
+          </div>
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1A365D" stroke-width="1.8" class="w-7 h-7 mx-auto mb-1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div class="text-[11px] font-bold text-ink-700 leading-tight">Privacidade<br>PROTEGIDA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. GARANTIA INCONDICIONAL DE 7 DIAS -->
+  <section class="py-16 sm:py-20" style="background: linear-gradient(180deg, #FAF9F6 0%, #FFFFFF 14%, #FFFFFF 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 text-center reveal">
+      <div class="w-24 h-24 rounded-full bg-navy-900 border-[4px] border-gold-400 flex flex-col items-center justify-center text-white mx-auto shadow-lift">
+        <span class="font-display font-black text-3xl text-gold-300 leading-none">7</span>
+        <span class="font-display font-bold text-[10px] tracking-widest text-white/80">DIAS</span>
+      </div>
+      <h2 class="mt-5">Garantia incondicional de <span class="accent text-navy-700">7 dias</span></h2>
+      <p class="text-ink-600 mt-3 max-w-xl mx-auto text-base sm:text-lg font-medium">
+        Baixe os 4 cadernos, teste no seu celular, tablet ou impresso e use nas suas revisões. Se achar que o material visual não facilitou seus estudos, basta enviar um e-mail para receber 100% do reembolso. Sem perguntas e sem burocracia.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-4 max-w-xl mx-auto mt-8 text-left">
+        <div class="card p-4 flex items-start gap-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1A365D" stroke-width="1.8" class="w-7 h-7 shrink-0"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <div>
+            <div class="font-bold text-navy-950 text-sm">Pagamento 100% Seguro</div>
+            <p class="text-xs text-ink-600 mt-0.5">Ambiente criptografado e seguro para sua compra.</p>
+          </div>
+        </div>
+        <div class="card p-4 flex items-start gap-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1A365D" stroke-width="1.8" class="w-7 h-7 shrink-0"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <div>
+            <div class="font-bold text-navy-950 text-sm">Material Autoral Registrado</div>
+            <p class="text-xs text-ink-600 mt-0.5">Conteúdo exclusivo produzido pela marca @mapeiamapas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAIXA DE CREDIBILIDADE -->
+  <section class="py-10 text-white" style="background: linear-gradient(160deg, #102A43, #0B192C);">
+    <div class="max-w-4xl mx-auto px-5 sm:px-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="font-display font-black text-3xl text-gold-300">250</div>
+        <div class="text-[12px] text-white/75 mt-1 font-semibold uppercase tracking-wider">mapas mentais</div>
+      </div>
+      <div>
+        <div class="font-display font-black text-3xl text-gold-300">4</div>
+        <div class="text-[12px] text-white/75 mt-1 font-semibold uppercase tracking-wider">cadernos temáticos</div>
+      </div>
+      <div>
+        <div class="font-display font-black text-3xl text-gold-300">Vitalício</div>
+        <div class="text-[12px] text-white/75 mt-1 font-semibold uppercase tracking-wider">acesso sem limites</div>
+      </div>
+      <div>
+        <div class="font-display font-black text-3xl text-gold-300">A4 & PDF</div>
+        <div class="text-[12px] text-white/75 mt-1 font-semibold uppercase tracking-wider">telas ou impressão</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. FAQ (Perguntas Frequentes) -->
+  <section class="py-16 sm:py-24" style="background: linear-gradient(180deg, #FFFFFF 0%, #FAF9F6 14%, #FAF9F6 100%);">
+    <div class="divtop"></div>
+    <div class="max-w-3xl mx-auto px-5 sm:px-6">
+      <div class="text-center mb-10 reveal">
+        <span class="eyebrow center">Dúvidas frequentes</span>
+        <h2 class="mt-3">Perguntas frequentes sobre os <span class="accent text-navy-700">mapas</span></h2>
+        <div class="gold-rule"></div>
+      </div>
+
+      <div class="space-y-3 reveal">
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">O material substitui cursos completos ou simulados oficiais?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              Não. Os 250 mapas são um material de apoio visual e revisão rápida, desenvolvido para complementar seus estudos teóricos, acelerar a memorização e clarear dúvidas pontuais durante a resolução de questões.
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">Serve tanto para quem estuda para CPA-10 quanto para CPA-20?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              Sim. Os 4 cadernos cobrem os conceitos fundamentais do mercado financeiro exigidos nas certificações, desde economia básica e sistema financeiro até riscos, renda fixa, ações, fundos e previdência.
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">Como recebo o acesso aos arquivos?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              O acesso é 100% digital e imediato. Assim que o pagamento é aprovado, você recebe um e-mail automático com os links para download dos 4 cadernos temáticos e de todos os bônus em PDF de alta qualidade.
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">Posso imprimir os mapas?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              Sim. Todas as 250 páginas foram diagramadas no formato padrão A4 com fundo branco limpo, o que permite tanto uma leitura confortável em telas de celular/tablet quanto uma impressão econômica de alta nitidez.
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">Por quanto tempo terei acesso?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              O acesso é vitalício. Você pode baixar os arquivos para seus dispositivos e consultar sempre que quiser, inclusive ao longo da sua carreira no mercado financeiro.
+            </div>
+          </div>
+        </div>
+
+        <div class="card overflow-hidden">
+          <button class="faq-btn w-full text-left p-4 sm:p-5 flex items-center justify-between gap-3">
+            <span class="font-display font-bold text-navy-950 text-base sm:text-lg">E se eu não me adaptar ao formato visual?</span>
+            <span class="faq-icon text-navy-800 text-2xl font-bold">+</span>
+          </button>
+          <div class="faq-content">
+            <div class="px-4 sm:px-5 pb-5 text-ink-600 text-xs sm:text-sm leading-relaxed font-medium">
+              Você conta com 7 dias de garantia incondicional. Se achar que o material não ajudou na sua rotina de estudos, devolvemos 100% do seu investimento.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. CTA FINAL EMOCIONAL (Sem Preço) -->
+  <section class="py-16 sm:py-24 text-center text-white overflow-hidden" style="background: linear-gradient(160deg, #102A43, #0B192C);">
+    <div class="blob w-[22rem] h-[22rem] -bottom-24 left-1/2 -translate-x-1/2" style="background: rgba(212, 179, 64, .14)"></div>
+    <div class="relative max-w-2xl mx-auto px-5 sm:px-6 reveal">
+      <div class="inline-flex items-center gap-2 text-[11px] sm:text-xs font-bold uppercase tracking-[0.18em] text-gold-300 mb-4">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold-300"></span>Sua Base no Mercado Financeiro
+      </div>
+      <h2 class="text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight">
+        Você pode continuar se perdendo em apostilas densas, <span class="text-gold-300">ou estudar com clareza visual hoje mesmo</span>.
+      </h2>
+      <p class="mt-5 text-sm sm:text-base text-white/85 max-w-xl mx-auto balance font-medium">
+        Tenha em mãos o atalho prático de 250 mapas estruturados para acelerar sua compreensão e ganhar segurança nos seus estudos.
+      </p>
+      <a href="#oferta" class="btn btn-gold w-full max-w-md mx-auto mt-7 !py-4 text-sm sm:text-base uppercase tracking-wide !whitespace-nowrap shadow-lg">
+        Quero garantir minha coleção de mapas agora
+      </a>
+      <div class="text-white/65 text-xs sm:text-sm mt-4 font-medium">Acesso imediato · Garantia incondicional de 7 dias</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-950 text-white py-12 sm:py-14 border-t border-navy-800">
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 flex flex-col items-center text-center gap-4">
+      <div class="flex items-center gap-2.5">
+        <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6 text-gold-400">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="font-display font-extrabold text-white text-xl tracking-wide">@mapeiamapas</div>
+      </div>
+      <div class="text-[13px] font-semibold text-gold-300 tracking-wide">Clareza visual para descomplicar temas técnicos.</div>
+      <div class="w-16 h-px bg-white/15 my-1"></div>
+      <div class="text-[11px] sm:text-xs text-white/55 space-y-1.5 max-w-2xl leading-relaxed">
+        <div>
+          <strong>Aviso legal:</strong> @mapeiamapas é uma marca independente de materiais didáticos visuais. Este produto é um material de apoio e revisão complementar e não possui afiliação institucional com a ANBIMA, nem substitui o programa oficial ou cursos preparatórios.
+        </div>
+        <div class="pt-1">
+          Este site não tem relação com a Meta, o Facebook, o Instagram ou o Google.
+        </div>
+        <div>
+          © <span id="year"></span> @mapeiamapas · Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Ano dinâmico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal on scroll
+    const obs = new IntersectionObserver((es) => {
+      es.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('active');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: .1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-btn').forEach(b => b.addEventListener('click', () => {
+      const c = b.nextElementSibling;
+      const i = b.querySelector('.faq-icon');
+      const open = c.style.maxHeight && c.style.maxHeight !== '0px';
+      document.querySelectorAll('.faq-content').forEach(x => x.style.maxHeight = '0px');
+      document.querySelectorAll('.faq-icon').forEach(x => x.textContent = '+');
+      if (!open) {
+        c.style.maxHeight = c.scrollHeight + 'px';
+        i.textContent = '−';
+      }
+    }));
+
+    // Smooth scroll para links internos
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 20, behavior: 'smooth' });
+        }
+      }
+    }));
+
+    // Função de navegação por botões do carrossel
+    function slide(d, id) {
+      var c = document.getElementById(id || 'car2');
+      if (c) {
+        c.scrollBy({ left: d * (c.querySelector('.slide').offsetWidth + 16), behavior: 'smooth' });
+      }
+    }
+
+    // Carrossel infinito / Marquee suave com suporte a drag
+    (function() {
+      document.querySelectorAll('.carousel').forEach(function(c) {
+        var down = false, sx = 0, sl = 0, moved = false;
+        c.addEventListener('pointerdown', function(e) {
+          if (e.pointerType && e.pointerType !== 'mouse') return;
+          down = true; moved = false; sx = e.clientX; sl = c.scrollLeft;
+          c.classList.add('dragging');
+          try { c.setPointerCapture(e.pointerId); } catch (_) {}
+        });
+        c.addEventListener('pointermove', function(e) {
+          if (!down) return;
+          var dx = e.clientX - sx;
+          if (Math.abs(dx) > 3) moved = true;
+          c.scrollLeft = sl - dx;
+        });
+        function up() {
+          if (!down) return;
+          down = false;
+          c.classList.remove('dragging');
+        }
+        c.addEventListener('pointerup', up);
+        c.addEventListener('pointercancel', up);
+        c.addEventListener('pointerleave', up);
+        c.addEventListener('click', function(e) {
+          if (moved) { e.preventDefault(); e.stopPropagation(); }
+        }, true);
+        c.addEventListener('dragstart', function(e) { e.preventDefault(); });
+      });
+
+      var c2 = document.getElementById('car2');
+      if (c2) {
+        c2.classList.add('marquee');
+        Array.prototype.slice.call(c2.children).forEach(function(s) {
+          c2.appendChild(s.cloneNode(true));
+        });
+        var half = function() { return c2.scrollWidth / 2; };
+        var paused = false, resumeT = null;
+        function pause() {
+          paused = true;
+          if (resumeT) { clearTimeout(resumeT); resumeT = null; }
+        }
+        function resumeSoon() {
+          if (resumeT) clearTimeout(resumeT);
+          resumeT = setTimeout(function() { paused = false; }, 2500);
+        }
+        c2.addEventListener('pointerdown', pause);
+        c2.addEventListener('touchstart', pause, { passive: true });
+        c2.addEventListener('mouseenter', pause);
+        c2.addEventListener('wheel', function() { pause(); resumeSoon(); }, { passive: true });
+        c2.addEventListener('pointerup', resumeSoon);
+        c2.addEventListener('pointercancel', resumeSoon);
+        c2.addEventListener('touchend', resumeSoon);
+        c2.addEventListener('mouseleave', resumeSoon);
+
+        function tick() {
+          if (!paused) {
+            c2.scrollLeft += 0.5;
+            if (c2.scrollLeft >= half()) c2.scrollLeft -= half();
+          }
+          requestAnimationFrame(tick);
+        }
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          requestAnimationFrame(tick);
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
