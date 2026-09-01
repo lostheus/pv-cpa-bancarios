@@ -110,17 +110,18 @@
     .ph svg { width: 30px; height: 30px; opacity: .55; }
     .ph .lab { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; line-height: 1.3; }
     .ph .sub { font-size: .66rem; color: #627D98; font-weight: 600; }
-    .carousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 6px 2px 14px; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; cursor: grab; user-select: none; }
+    .carousel { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 4px 18px; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; }
     .carousel::-webkit-scrollbar { display: none; }
-    .carousel.dragging { cursor: grabbing; scroll-behavior: auto; }
-    .carousel.marquee { scroll-snap-type: none; scroll-behavior: auto; }
-    .carousel .slide { scroll-snap-align: center; flex: 0 0 82%; }
-    @media(min-width: 760px) { .carousel .slide { flex: 0 0 42%; } }
-    @media(min-width: 1100px) { .carousel .slide { flex: 0 0 31%; } }
-    .carbtn { position: absolute; top: 42%; width: 44px; height: 44px; border-radius: 999px; background: #fff; border: 1px solid rgba(11,25,44,.12); box-shadow: 0 8px 20px -10px rgba(11,25,44,.3); cursor: pointer; font-size: 20px; color: #102A43; display: none; align-items: center; justify-content: center; z-index: 2; font-weight: bold; }
-    @media(min-width: 760px) { .carbtn { display: flex; } }
-    .carbtn.prev { left: -12px; }
-    .carbtn.next { right: -12px; }
+    .carousel .slide { scroll-snap-align: center; flex: 0 0 84%; max-width: 320px; }
+    @media(min-width: 640px) { .carousel .slide { flex: 0 0 44%; max-width: 360px; } }
+    @media(min-width: 1024px) { .carousel .slide { flex: 0 0 31%; max-width: 400px; } }
+    .mapimg { width: 100%; height: auto; border-radius: 12px; border: 1px solid #E2E8F0; box-shadow: 0 4px 14px rgba(11, 25, 44, 0.08); display: block; }
+    .carbtn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 999px; background: #0B192C; color: #F7EFCF; border: 1px solid rgba(212,179,64,.3); box-shadow: 0 6px 16px rgba(11,25,44,.25); cursor: pointer; font-size: 22px; display: flex; align-items: center; justify-content: center; z-index: 10; transition: background .2s ease, transform .2s ease; }
+    .carbtn:hover { background: #1A365D; transform: translateY(-50%) scale(1.06); }
+    .carbtn:active { transform: translateY(-50%) scale(0.95); }
+    .carbtn.prev { left: -10px; }
+    .carbtn.next { right: -10px; }
+    @media(max-width: 640px) { .carbtn { width: 34px; height: 34px; font-size: 18px; } .carbtn.prev { left: -6px; } .carbtn.next { right: -6px; } }
     .faq-content { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
     .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
     .reveal.active { opacity: 1; transform: none; }
@@ -1210,91 +1211,77 @@
     }));
 
     // Smooth scroll para links internos
-    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
-      const id = a.getAttribute('href');
-      if (id.length > 1) {
-        const el = document.querySelector(id);
-        if (el) {
-          e.preventDefault();
-          window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 20, behavior: 'smooth' });
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var id = a.getAttribute('href');
+        if (id && id.length > 1) {
+          var el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 20, behavior: 'smooth' });
+          }
         }
-      }
-    }));
+      });
+    });
 
     // Função de navegação por botões do carrossel
     function slide(d, id) {
       var c = document.getElementById(id || 'car2');
-      if (c) {
-        c.scrollBy({ left: d * (c.querySelector('.slide').offsetWidth + 16), behavior: 'smooth' });
+      if (!c) return;
+      var slideEl = c.querySelector('.slide');
+      if (!slideEl) return;
+      var step = slideEl.offsetWidth + 16;
+      var maxScroll = c.scrollWidth - c.clientWidth;
+      
+      if (d > 0 && c.scrollLeft >= maxScroll - 10) {
+        c.scrollTo({ left: 0, behavior: 'smooth' });
+      } else if (d < 0 && c.scrollLeft <= 10) {
+        c.scrollTo({ left: maxScroll, behavior: 'smooth' });
+      } else {
+        c.scrollBy({ left: d * step, behavior: 'smooth' });
       }
     }
 
-    // Carrossel infinito / Marquee suave com suporte a drag
+    // Auto-avanço inteligente (não interfere no swipe manual)
     (function() {
-      document.querySelectorAll('.carousel').forEach(function(c) {
-        var down = false, sx = 0, sl = 0, moved = false;
-        c.addEventListener('pointerdown', function(e) {
-          if (e.pointerType && e.pointerType !== 'mouse') return;
-          down = true; moved = false; sx = e.clientX; sl = c.scrollLeft;
-          c.classList.add('dragging');
-          try { c.setPointerCapture(e.pointerId); } catch (_) {}
-        });
-        c.addEventListener('pointermove', function(e) {
-          if (!down) return;
-          var dx = e.clientX - sx;
-          if (Math.abs(dx) > 3) moved = true;
-          c.scrollLeft = sl - dx;
-        });
-        function up() {
-          if (!down) return;
-          down = false;
-          c.classList.remove('dragging');
-        }
-        c.addEventListener('pointerup', up);
-        c.addEventListener('pointercancel', up);
-        c.addEventListener('pointerleave', up);
-        c.addEventListener('click', function(e) {
-          if (moved) { e.preventDefault(); e.stopPropagation(); }
-        }, true);
-        c.addEventListener('dragstart', function(e) { e.preventDefault(); });
-      });
-
       var c2 = document.getElementById('car2');
-      if (c2) {
-        c2.classList.add('marquee');
-        Array.prototype.slice.call(c2.children).forEach(function(s) {
-          c2.appendChild(s.cloneNode(true));
-        });
-        var half = function() { return c2.scrollWidth / 2; };
-        var paused = false, resumeT = null;
-        function pause() {
-          paused = true;
-          if (resumeT) { clearTimeout(resumeT); resumeT = null; }
-        }
-        function resumeSoon() {
-          if (resumeT) clearTimeout(resumeT);
-          resumeT = setTimeout(function() { paused = false; }, 2500);
-        }
-        c2.addEventListener('pointerdown', pause);
-        c2.addEventListener('touchstart', pause, { passive: true });
-        c2.addEventListener('mouseenter', pause);
-        c2.addEventListener('wheel', function() { pause(); resumeSoon(); }, { passive: true });
-        c2.addEventListener('pointerup', resumeSoon);
-        c2.addEventListener('pointercancel', resumeSoon);
-        c2.addEventListener('touchend', resumeSoon);
-        c2.addEventListener('mouseleave', resumeSoon);
+      if (!c2) return;
+      
+      var isInteracting = false;
+      var timer = null;
 
-        function tick() {
-          if (!paused) {
-            c2.scrollLeft += 0.5;
-            if (c2.scrollLeft >= half()) c2.scrollLeft -= half();
-          }
-          requestAnimationFrame(tick);
-        }
-        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-          requestAnimationFrame(tick);
-        }
+      function stopTimer() {
+        if (timer) { clearInterval(timer); timer = null; }
       }
+
+      function startTimer() {
+        stopTimer();
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        timer = setInterval(function() {
+          if (!isInteracting) {
+            slide(1, 'car2');
+          }
+        }, 4000);
+      }
+
+      function pause() {
+        isInteracting = true;
+        stopTimer();
+      }
+
+      function resume() {
+        isInteracting = false;
+        startTimer();
+      }
+
+      c2.addEventListener('touchstart', pause, { passive: true });
+      c2.addEventListener('touchend', function() {
+        setTimeout(resume, 2500);
+      }, { passive: true });
+      c2.addEventListener('mouseenter', pause);
+      c2.addEventListener('mouseleave', resume);
+
+      startTimer();
     })();
   </script>
 </body>
