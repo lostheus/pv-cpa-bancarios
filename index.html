@@ -984,7 +984,7 @@
           <div class="font-display font-black text-5xl sm:text-6xl text-navy-950 leading-none mt-2">R$ 47</div>
           <div class="text-ink-600 mt-1.5 text-xs sm:text-sm font-medium">pagamento único no Pix ou cartão · ou em até 6x no cartão</div>
           
-          <a href="#checkout" class="btn btn-gold w-full mt-6 !py-4 text-sm sm:text-base uppercase tracking-wide shadow-md">
+          <a href="https://payfast.greenn.com.br/fuewck9" class="btn btn-gold w-full mt-6 !py-4 text-sm sm:text-base uppercase tracking-wide shadow-md">
             Quero meu acesso aos 250 mapas agora
           </a>
 
@@ -1310,6 +1310,19 @@
       c2.addEventListener('mouseleave', resume);
 
       startTimer();
+    })();
+
+    // Repasse automático de parâmetros UTM para o checkout
+    (function() {
+      if (window.location.search) {
+        var query = window.location.search.substring(1);
+        var checkoutLinks = document.querySelectorAll('a[href*="payfast.greenn.com.br"]');
+        checkoutLinks.forEach(function(link) {
+          var href = link.getAttribute('href');
+          var separator = href.indexOf('?') !== -1 ? '&' : '?';
+          link.setAttribute('href', href + separator + query);
+        });
+      }
     })();
   </script>
 </body>
