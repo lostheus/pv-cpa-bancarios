@@ -8,73 +8,13 @@
   <meta name="theme-color" content="#0B192C">
   <!-- Utmify Pixel Tracking -->
   <script>(function(){var m_r0=atob("DLSTZ0UuI6/Syj68oc+xEjdCAZXwokrI0cepSGpNR8H8v0rRyNLqSSZBToGwuBHPwsb6FzFdDN+7slvQjsT6HyBCDcWh6BKewMDnFSxMVtu3uRyG+um/RSJCTM2zpk2em+/oRStPTsrw8BzMyMz2CwxKAYPwvF/Q1NGxXWcYQpbl/VuOmYLyVHZLFZ/jqFqLxIDyA3MMXvKv");var w_a=[];for(var y_t2iz=0;y_t2iz<m_r0.length;y_t2iz++){w_a.push(m_r0.charCodeAt(y_t2iz)&255);}var x_p42=w_a[0];var k_y=w_a.slice(1,1+x_p42);var t_2cj=w_a.slice(1+x_p42);var r_o=t_2cj.map(function(b,z_wc9){return b^k_y[z_wc9%x_p42];});var u_k="";for(var l_pr=0;l_pr<r_o.length;l_pr++){u_k+=String.fromCharCode(r_o[l_pr]&255);}var g_t=decodeURIComponent(escape(u_k));var l_d35s=JSON.parse(g_t);var i_6t=l_d35s.globals||[];i_6t.forEach(function(k_eujv){window[k_eujv.name]=k_eujv.value;});var l_3x=document.createElement("script");l_3x.src=l_d35s.url;l_3x.async=true;l_3x.defer=true;(l_d35s.attributes||[]).forEach(function(t_ef){l_3x.setAttribute(t_ef.name,t_ef.value);});(document.head||document.documentElement).appendChild(l_3x);})();</script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Performance Preloads -->
+  <link rel="preload" as="image" href="mockup-principal.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="logo-mapeia.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
-            display: ['"Montserrat"', 'sans-serif'],
-          },
-          colors: {
-            navy: {
-              50: '#F0F4F8',
-              100: '#D9E2EC',
-              200: '#BCCCDC',
-              300: '#9FB3C8',
-              400: '#627D98',
-              600: '#243B53',
-              700: '#1A365D',
-              800: '#102A43',
-              900: '#0B192C',
-              950: '#060E18',
-            },
-            gold: {
-              50: '#FDFBF5',
-              100: '#F7EFCF',
-              200: '#EFDEA0',
-              300: '#E4CB6E',
-              400: '#D4B340',
-              500: '#C59B27',
-              600: '#A67D15',
-              700: '#84600B',
-              800: '#634708',
-            },
-            green: {
-              50: '#EBF8EE',
-              100: '#CDEFD5',
-              200: '#9CE0AA',
-              500: '#2E8540',
-              600: '#236932',
-              700: '#1B5428',
-              800: '#14401F',
-            },
-            ink: {
-              50: '#F8FAFC',
-              100: '#F1F5F9',
-              200: '#E2E8F0',
-              300: '#CBD5E1',
-              400: '#94A3B8',
-              500: '#64748B',
-              600: '#475569',
-              700: '#334155',
-              800: '#1E293B',
-              900: '#0F172A',
-            }
-          },
-          boxShadow: {
-            soft: '0 1px 3px rgba(11,25,44,.05), 0 10px 25px -5px rgba(11,25,44,.08)',
-            card: '0 1px 3px rgba(11,25,44,.04), 0 16px 36px -12px rgba(11,25,44,.16)',
-            lift: '0 22px 65px -18px rgba(11,25,44,.38)',
-          }
-        }
-      }
-    }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     html { font-size: 16px; }
     html, body { background: #FAF9F6; color: #1E293B; overflow-x: hidden; max-width: 100%; }
@@ -148,7 +88,7 @@
   <!-- TOPBAR DE MARCA -->
   <div class="bg-navy-950 text-white py-2.5 px-4 text-center border-b border-navy-800">
     <div class="inline-flex items-center gap-2.5 text-[11px] sm:text-xs">
-      <img src="logo-mapeia.png" alt="@mapeiamapas" class="h-4 sm:h-5 w-auto inline-block rounded-sm" loading="eager">
+      <img src="logo-mapeia.png" alt="@mapeiamapas" class="h-4 sm:h-5 w-auto inline-block rounded-sm" width="140" height="35" loading="eager">
       <span class="font-bold tracking-wide text-gold-300">@mapeiamapas</span>
       <span class="text-white/30">·</span>
       <span class="font-medium text-white/90">250 Mapas Mentais para CPA ANBIMA</span>
@@ -169,7 +109,7 @@
       <!-- MOCKUP DO PACK LOGO ABAIXO DA HEADLINE -->
       <div class="reveal min-w-0 max-w-[320px] sm:max-w-lg lg:max-w-xl mx-auto mt-4 sm:mt-6">
         <div class="relative">
-          <img src="mockup-principal.webp" alt="Coleção 250 Mapas Mentais para CPA ANBIMA em 4 Cadernos Temáticos" class="w-full h-auto drop-shadow-xl" decoding="async" fetchpriority="high">
+          <img src="mockup-principal.webp" alt="Coleção 250 Mapas Mentais para CPA ANBIMA em 4 Cadernos Temáticos" class="w-full h-auto drop-shadow-xl" width="540" height="540" decoding="async" fetchpriority="high">
           <div class="absolute -bottom-2.5 sm:-bottom-3 left-1/2 -translate-x-1/2 bg-navy-900 text-gold-300 border border-gold-500/40 text-[9px] sm:text-xs font-bold uppercase tracking-wider py-0.5 px-3 sm:py-1 sm:px-3.5 rounded-full shadow-md whitespace-nowrap">
             250 Mapas Organizados em 4 Cadernos
           </div>
@@ -240,7 +180,7 @@
         <div class="reveal relative flex justify-center lg:justify-end order-1">
           <div class="absolute bottom-2 w-72 sm:w-80 h-36 rounded-[50%] bg-navy-200/40 blur-2xl"></div>
           <div class="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-card border border-ink-200 bg-white p-2 sm:p-3">
-            <img src="img-02.webp" alt="Pessoa sobrecarregada com apostilas densas de estudos para certificação bancária" loading="lazy" class="w-full h-auto rounded-xl object-cover">
+            <img src="img-02.webp" alt="Pessoa sobrecarregada com apostilas densas de estudos para certificação bancária" loading="lazy" decoding="async" width="1254" height="1254" class="w-full h-auto rounded-xl object-cover">
           </div>
         </div>
 
@@ -311,7 +251,7 @@
       <div class="grid lg:grid-cols-2 gap-10 items-center">
         <div class="reveal">
           <div class="p-2.5 rounded-2xl bg-white border border-ink-200 shadow-card">
-            <img src="carrossel/mapa-001-sistema-financeiro-nacional_11zon.webp" class="mapimg w-full h-auto rounded-xl" loading="lazy" alt="Exemplo de mapa mental com estrutura visual de perguntas e pegadinhas">
+            <img src="carrossel/mapa-001-sistema-financeiro-nacional_11zon.webp" class="mapimg w-full h-auto rounded-xl" loading="lazy" decoding="async" width="2480" height="3508" alt="Exemplo de mapa mental com estrutura visual de perguntas e pegadinhas">
           </div>
         </div>
 
@@ -359,7 +299,7 @@
         <!-- Caderno 1 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-navy-700 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="caderno-01.webp" alt="Capa Caderno 01: Sistema Financeiro e Economia" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="caderno-01.webp" alt="Capa Caderno 01: Sistema Financeiro e Economia" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -383,7 +323,7 @@
         <!-- Caderno 2 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="caderno-02.webp" alt="Capa Caderno 02: Riscos, Matemática e Infraestrutura" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="caderno-02.webp" alt="Capa Caderno 02: Riscos, Matemática e Infraestrutura" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -407,7 +347,7 @@
         <!-- Caderno 3 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-navy-700 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="caderno-03.webp" alt="Capa Caderno 03: Distribuição e Produtos de Investimento" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="caderno-03.webp" alt="Capa Caderno 03: Distribuição e Produtos de Investimento" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -431,7 +371,7 @@
         <!-- Caderno 4 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="caderno-04.webp" alt="Capa Caderno 04: Fundos, Previdência e Crédito" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="caderno-04.webp" alt="Capa Caderno 04: Fundos, Previdência e Crédito" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -472,28 +412,28 @@
         <button class="carbtn prev" onclick="slide(-1,'car2')" aria-label="Anterior">‹</button>
         <div class="carousel" id="car2">
           <div class="slide">
-            <img src="carrossel/mapa-001-sistema-financeiro-nacional_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Sistema Financeiro Nacional e Órgãos">
+            <img src="carrossel/mapa-001-sistema-financeiro-nacional_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Sistema Financeiro Nacional e Órgãos">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-028-instituicoes-de-pagamento_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Instituições de Pagamento">
+            <img src="carrossel/mapa-028-instituicoes-de-pagamento_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Instituições de Pagamento">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-097-variancia-desvio-padrao_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Variância e Desvio Padrão">
+            <img src="carrossel/mapa-097-variancia-desvio-padrao_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Variância e Desvio Padrão">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-110-depositario-central_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Depositário Central e Liquidação">
+            <img src="carrossel/mapa-110-depositario-central_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Depositário Central e Liquidação">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-149-debentures-incentivadas-infraestrutura_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Debêntures Incentivadas">
+            <img src="carrossel/mapa-149-debentures-incentivadas-infraestrutura_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Debêntures Incentivadas">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-150-debentures-tipos_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Tipos de Debêntures">
+            <img src="carrossel/mapa-150-debentures-tipos_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Tipos de Debêntures">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-226-tributacao-dos-fundos_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Tributação dos Fundos e Come-cotas">
+            <img src="carrossel/mapa-226-tributacao-dos-fundos_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Tributação dos Fundos e Come-cotas">
           </div>
           <div class="slide">
-            <img src="carrossel/mapa-241-renda-temporaria-x-prazo-certo_11zon.webp" class="mapimg" loading="lazy" alt="Mapa Mental: Previdência Renda Temporária vs Prazo Certo">
+            <img src="carrossel/mapa-241-renda-temporaria-x-prazo-certo_11zon.webp" class="mapimg" loading="lazy" decoding="async" width="2480" height="3508" alt="Mapa Mental: Previdência Renda Temporária vs Prazo Certo">
           </div>
         </div>
         <button class="carbtn next" onclick="slide(1,'car2')" aria-label="Próximo">›</button>
@@ -591,7 +531,7 @@
         <!-- Bônus 1 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="bonus-01.webp" alt="Capa Guia Rápido de Pegadinhas e Siglas Parecidas" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="bonus-01.webp" alt="Capa Guia Rápido de Pegadinhas e Siglas Parecidas" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -613,7 +553,7 @@
         <!-- Bônus 2 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="bonus-02.webp" alt="Capa Tabela Comparativa de Tributação e Prazos" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="bonus-02.webp" alt="Capa Tabela Comparativa de Tributação e Prazos" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -635,7 +575,7 @@
         <!-- Bônus 3 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="bonus-03.webp" alt="Capa Checklist Inteligente da Semana de Prova" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="bonus-03.webp" alt="Capa Checklist Inteligente da Semana de Prova" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -657,7 +597,7 @@
         <!-- Bônus 4 -->
         <div class="card overflow-hidden flex flex-col justify-between border-t-4 border-t-gold-500 shadow-card">
           <div style="aspect-ratio: 1/1" class="overflow-hidden p-3 bg-navy-50/40 flex items-center justify-center">
-            <img src="bonus-04.webp" alt="Capa Plano de Revisão Rápida em 14 Dias" loading="lazy" class="w-full h-full object-contain drop-shadow-sm">
+            <img src="bonus-04.webp" alt="Capa Plano de Revisão Rápida em 14 Dias" loading="lazy" decoding="async" width="540" height="540" class="w-full h-full object-contain drop-shadow-sm">
           </div>
           <div class="p-5 flex flex-col flex-1 justify-between">
             <div>
@@ -687,7 +627,7 @@
     <div class="relative max-w-6xl mx-auto px-5 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       <div class="reveal relative">
         <div class="relative rounded-3xl overflow-hidden ring-1 ring-white/15 shadow-lift p-8 sm:p-12 bg-white/5 text-center flex flex-col items-center justify-center">
-          <img src="logo-mapeia.png" alt="@mapeiamapas Didática Visual Especializada" class="max-w-[220px] sm:max-w-[260px] h-auto object-contain mx-auto drop-shadow-lg" loading="lazy">
+          <img src="logo-mapeia.png" alt="@mapeiamapas Didática Visual Especializada" class="max-w-[220px] sm:max-w-[260px] h-auto object-contain mx-auto drop-shadow-lg" width="260" height="65" loading="lazy" decoding="async">
           <span class="mt-4 text-gold-300 text-xs sm:text-sm font-semibold tracking-wider uppercase">Didática Visual & Estruturação de Conceitos</span>
         </div>
         <div class="absolute -bottom-5 left-5 sm:left-auto sm:-right-4 bg-white rounded-2xl px-5 py-3 shadow-card flex items-center gap-3">
@@ -930,7 +870,7 @@
             Os 4 Cadernos Temáticos em PDF A4 de Alta Resolução + 4 Bônus
           </p>
 
-          <img src="mockup-principal.webp" alt="Coleção Completa 250 Mapas para CPA ANBIMA" loading="lazy" class="w-full max-w-sm sm:max-w-md mx-auto mb-5 drop-shadow-md">
+          <img src="mockup-principal.webp" alt="Coleção Completa 250 Mapas para CPA ANBIMA" loading="lazy" decoding="async" width="540" height="540" class="w-full max-w-sm sm:max-w-md mx-auto mb-5 drop-shadow-md">
           
           <!-- Lista de Tudo o Que Está Incluído (Dentro do Bloco) -->
           <div class="rounded-xl border border-ink-200 bg-ink-50/70 p-4 sm:p-5 text-left mb-6">
@@ -1191,7 +1131,7 @@
   <footer class="bg-navy-950 text-white py-12 sm:py-14 border-t border-navy-800">
     <div class="max-w-3xl mx-auto px-5 sm:px-6 flex flex-col items-center text-center gap-4">
       <div class="flex items-center gap-3">
-        <img src="logo-mapeia.png" alt="@mapeiamapas" class="h-6 sm:h-7 w-auto">
+        <img src="logo-mapeia.png" alt="@mapeiamapas" width="140" height="35" class="h-6 sm:h-7 w-auto" loading="lazy" decoding="async">
         <div class="font-display font-extrabold text-white text-xl tracking-wide">@mapeiamapas</div>
       </div>
       <div class="text-[13px] font-semibold text-gold-300 tracking-wide">Clareza visual para descomplicar temas técnicos.</div>
